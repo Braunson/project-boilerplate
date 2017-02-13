@@ -6,7 +6,7 @@ require 'yaml'
 
 VAGRANTFILE_API_VERSION ||= "2"
 confDir = $confDir ||= File.expand_path("vendor/laravel/homestead", File.dirname(__FILE__))
-hsDir   = $hsDir   ||= File.expand_path(File.join(Dir.home, ".homestead"))
+hsDir   = $hsDir   ||= File.expand_path(File.join(File.dirname(__FILE__), ".homestead"))
 
 homesteadYamlPath = "Homestead.yaml"
 homesteadJsonPath = "Homestead.json"
