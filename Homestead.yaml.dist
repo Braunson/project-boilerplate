@@ -1,9 +1,9 @@
 ---
-ip: "192.168.10.10"
+ip: "192.168.10.13"
 memory: 2048
 cpus: 1
-hostname: laravel-traveler
-name: laravel-traveler
+hostname: laravel-boilerplate
+name: laravel-boilerplate
 provider: virtualbox
 
 authorize: ~/.ssh/id_rsa.pub
@@ -12,21 +12,20 @@ keys:
     - ~/.ssh/id_rsa
 
 folders:
-    - map: "C:/Users/geekybeaver/Documents/GitHub/laravel-traveler"
-      to: "/home/vagrant/traveler"
-    - map: "C:/Users/geekybeaver/Documents/GitHub/laravel-traveler/.homestead/phpmyadmin"
+    - map: "C:/Users/geekybeaver/Documents/GitHub/project"
+      to: "/home/vagrant/project"
+    - map: "C:/Users/geekybeaver/Documents/GitHub/project/.homestead/phpmyadmin"
       to: "/home/vagrant/phpmyadmin"
 
 sites:
+    - map: project.app
+      to: "/home/vagrant/project/public"
+      schedule: true
     - map: phpmyadmin.app
       to: "/home/vagrant/phpmyadmin"
-    - map: traveler.app
-      to: "/home/vagrant/traveler/public"
-      schedule: true
 
 databases:
     - homestead
-    - traveler
 
 variables:
     - key: APP_ENV
