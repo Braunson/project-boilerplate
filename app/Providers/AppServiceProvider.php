@@ -31,6 +31,7 @@ class AppServiceProvider extends ServiceProvider
 			$this->app->register(\Themsaid\MailPreview\MailPreviewServiceProvider::class);
 			$this->app->register(\Laracasts\Generators\GeneratorsServiceProvider::class);
 			$this->app->register(\GrahamCampbell\Exceptions\ExceptionsServiceProvider::class);
+			$this->app->register(\Lubusin\Decomposer\DecomposerServiceProvider::class);
 		}
 	}
 }

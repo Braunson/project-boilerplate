@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "5f9885fa5f9912d700da73b575afc06c",
+    "content-hash": "b0d003904528a52e8186bb828189b8a5",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -504,6 +504,48 @@
                 "storage"
             ],
             "time": "2017-02-09T11:33:58+00:00"
+        },
+        {
+            "name": "lubusin/laravel-decomposer",
+            "version": "v1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lubusIN/laravel-decomposer.git",
+                "reference": "19d04ac0b6da233d3e0565377f5e03b25c9c4204"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lubusIN/laravel-decomposer/zipball/19d04ac0b6da233d3e0565377f5e03b25c9c4204",
+                "reference": "19d04ac0b6da233d3e0565377f5e03b25c9c4204",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "~5.3",
+                "illuminate/support": "~5.3",
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "illuminate/http": "~5.3",
+                "illuminate/routing": "~5.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Lubusin\\Decomposer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Harish Toshniwal",
+                    "email": "harish@lubus.in"
+                }
+            ],
+            "description": "A Laravel package to decompose and list your installed packages and their dependencies",
+            "time": "2017-03-01T12:56:41+00:00"
         },
         {
             "name": "monolog/monolog",
