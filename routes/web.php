@@ -14,10 +14,3 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
-// Local dev routes only
-Route::group([
-    'domain' => 'project.app'
-], function () {
-    Route::get('decompose','\Lubusin\Decomposer\Controllers\DecomposerController@index');
-});
