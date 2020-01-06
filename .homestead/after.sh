@@ -9,7 +9,7 @@ sudo apt-get update
 
 # Install PHPMyAdmin
 echo 'installing PHPMyAdmin'
-sh /home/vagrant/houseable/.homestead/pma-setup.sh
+sh /home/vagrant/code/.homestead/pma-setup.sh
 
 # Install Lavalog
 # By default convert the line endings just in case
