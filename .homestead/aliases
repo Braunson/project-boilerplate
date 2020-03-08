@@ -73,3 +73,17 @@ function convertarrays() {
 	find . -name "*.php" ! -path "*vendor*" -exec php "convert.php" -w "{}" ;
 	rm convert.php
 }
+
+# Create models, controllers, facotire,s seed, poliucy, resources, requests all in one go
+# usage: acr Account User
+function acr() {
+        art make:model Models\\$1\\$2
+        art make:controller --resource --api --model=Models\\$1\\$2 $1\\$(plur $2)Controller
+        art make:factory --model=Models\\$1\\$2 $(plur $2)Factory
+        art make:seed $(plur $2)Seeder
+        art make:policy --model=Models\\$1\\$2 $1\\$2Policy
+        art make:resource $1\\$2Resource
+        art make:resource --collection $1\\$(plur $2)Collection
+        art make:request $1\\Create$2Request
+        art make:request $1\\Update$2Request
+}

@@ -19,7 +19,7 @@ chmod 755 /usr/local/bin/lavalog
 
 # Install some global tools we need
 # All tools from http://jenkins-php.org/installation.html
-composer global require friendsofphp/php-cs-fixer "squizlabs/php_codesniffer=*" phpunit/phpunit phploc/phploc pdepend/pdepend phpmd/phpmd sebastian/phpcpd theseer/phpdox hirak/prestissimo infection/infection --quiet --no-interaction
+composer global require friendsofphp/php-cs-fixer "squizlabs/php_codesniffer=*" phpunit/phpunit phploc/phploc pdepend/pdepend phpmd/phpmd sebastian/phpcpd theseer/phpdox hirak/prestissimo infection/infection sarfraznawaz2005/composer-cost --quiet --no-interaction
 
 # Install php-gmp extention/module that we need for WebPush notifications!
 sudo DEBIAN_FRONTEND=noninteractive apt-get -y -o Dpkg::Options::="--force-confnew" install software-properties-common

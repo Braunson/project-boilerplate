@@ -18,10 +18,11 @@
         "fzaninotto/faker": "^1.4",
         "laravel/homestead": "^10.0",
         "mockery/mockery": "^1.0",
+        "mtolhuys/laravel-schematics": "^0.9.10",
         "nunomaduro/collision": "^3.0",
         "phpmd/phpmd": "^2.8.1",
-        "squizlabs/php_codesniffer": "3.*",
-        "phpunit/phpunit": "^8.0"
+        "phpunit/phpunit": "^8.0",
+        "squizlabs/php_codesniffer": "3.*"
     },
     "config": {
         "optimize-autoloader": true,
