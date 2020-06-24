@@ -367,7 +367,7 @@ alias copyssh="pbcopy < $HOME/.ssh/id_rsa.pub"
 
 function convertarrays() {
 	curl "https://raw.githubusercontent.com/thomasbachem/php-short-array-syntax-converter/master/convert.php" -o convert.php
-	find . -name "*.php" ! -path "*vendor*" -exec php "convert.php" -w "{}" ;
+	find . -name "*.php" ! -path "*vendor*" -exec php "convert.php" -w "{}" \;
 	rm convert.php
 }
 
