@@ -371,7 +371,7 @@ function convertarrays() {
 	rm convert.php
 }
 
-# Create models, controllers, facotire,s seed, poliucy, resources, requests all in one go
+# Create models, controllers, factories, seeds, policies, resources, requests all in one go
 # usage: acr Account User
 function acr() {
         art make:model Models\\$1\\$2
