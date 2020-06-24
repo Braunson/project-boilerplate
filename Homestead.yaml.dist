@@ -2,35 +2,29 @@ ip: 192.168.10.10
 memory: 2048
 cpus: 2
 provider: virtualbox
-authorize: ~/.ssh/id_rsa.pub
 name: project-homestead
 hostname: project-homestead
 
+authorize: ~/.ssh/id_rsa.pub
+
 keys:
     - ~/.ssh/id_rsa
-    
+
 folders:
-    - map: 'C:\Users\geekybeaver\Documents\GitHub\project-name'
+    - map: '~/Documents/GitHub/project'
       to: /home/vagrant/code
-    - map: 'C:\Users\geekybeaver\Documents\GitHub\project-name\.homestead\phpmyadmin-placeholder'
-      to: "/home/vagrant/phpmyadmin"
-      
+
 sites:
     - map: project.local
       to: /home/vagrant/code/public
       schedule: true
-    - map: phpmyadmin.local
-      to: "/home/vagrant/phpmyadmin"
-       
+
 databases:
     - homestead
-    
+
 # variables:
 #     - key: COMPOSER_AUTH
 #       value: '{"github-oauth": {"github.com": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"}}'
-    
-# features:
-#    - mariadb: false
-#    - ohmyzsh: false
-#    - webdriver: false
-#    - elasticsearch: false
+
+features:
+    - webdriver: true

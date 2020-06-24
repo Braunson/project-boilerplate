@@ -12,8 +12,6 @@ npm-debug.log
 yarn-error.log
 
 # Custom
-/.homestead/phpmyadmin-placeholder/*
-!/.homestead/phpmyadmin-placeholder/.placeholder
 .php_cs.cache
 .phpunit.result.cache
 .phpunit-watcher-cache.php
