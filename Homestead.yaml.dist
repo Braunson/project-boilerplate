@@ -18,6 +18,8 @@ sites:
     - map: project.local
       to: /home/vagrant/code/public
       schedule: true
+    - map: pma.project.local
+      to: /home/vagrant/phpmyadmin
 
 databases:
     - homestead
